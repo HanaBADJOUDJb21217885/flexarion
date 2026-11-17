@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hanabadjoudjb21217885.github.io/flexarion/sitemap.xml
