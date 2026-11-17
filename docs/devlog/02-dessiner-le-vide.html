@@ -4,80 +4,179 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Devlog #2 : dessiner le vide, la direction artistique — Flexarion</title>
-  <meta name="description" content="Deuxième devlog du studio Flexarion : comment nous avons construit la direction artistique du vaisseau-archive des Archives de Vela, entre lumière froide et silence.">
+  <meta name="description" content="Devlog #2 du studio Flexarion : la direction artistique du vaisseau-archive des Archives de Vela, avec deux couleurs, des traces et des sons visibles.">
   <link rel="canonical" href="https://hanabadjoudjb21217885.github.io/flexarion/devlog/02-dessiner-le-vide.html">
+  <meta name="theme-color" content="#0f1115">
+  <meta name="author" content="Léa Moreau, Flexarion">
   <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Flexarion">
+  <meta property="og:locale" content="fr_FR">
   <meta property="og:title" content="Devlog #2 : dessiner le vide">
+  <meta property="og:description" content="Comment rendre un vaisseau désert beau, lisible et chargé d'histoire avec seulement deux couleurs.">
   <meta property="og:url" content="https://hanabadjoudjb21217885.github.io/flexarion/devlog/02-dessiner-le-vide.html">
-  <link rel="stylesheet" href="../style.css">
+  <meta property="og:image" content="https://hanabadjoudjb21217885.github.io/flexarion/assets/img/og-flexarion.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Logo Flexarion sur un graphique d'impulsions du pulsar de Vela">
+  <meta property="article:published_time" content="2026-11-17">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Devlog #2 : dessiner le vide">
+  <meta name="twitter:description" content="La direction artistique du vaisseau-archive des Archives de Vela.">
+  <meta name="twitter:image" content="https://hanabadjoudjb21217885.github.io/flexarion/assets/img/og-flexarion.png">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script>document.documentElement.classList.add("js")</script>
+  <script src="../assets/js/main.js" defer></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": "Devlog #2 : dessiner le vide, la direction artistique du vaisseau-archive",
-    "datePublished": "2026-11-17",
-    "inLanguage": "fr",
-    "image": "https://hanabadjoudjb21217885.github.io/flexarion/img/ora-drone-couloir.svg",
-    "author": { "@type": "Organization", "name": "Flexarion" },
-    "publisher": { "@type": "Organization", "name": "Flexarion" }
+    "@graph": [
+      {
+        "@type": "BlogPosting",
+        "headline": "Devlog #2 : dessiner le vide, la direction artistique du vaisseau-archive",
+        "description": "Comment nous avons construit la direction artistique du vaisseau-archive des Archives de Vela.",
+        "datePublished": "2026-11-17",
+        "dateModified": "2026-11-17",
+        "inLanguage": "fr-FR",
+        "image": "https://hanabadjoudjb21217885.github.io/flexarion/assets/img/coursive.svg",
+        "mainEntityOfPage": "https://hanabadjoudjb21217885.github.io/flexarion/devlog/02-dessiner-le-vide.html",
+        "author": { "@type": "Person", "name": "Léa Moreau", "jobTitle": "Directrice artistique", "worksFor": { "@type": "Organization", "name": "Flexarion" } },
+        "publisher": { "@type": "Organization", "name": "Flexarion", "logo": { "@type": "ImageObject", "url": "https://hanabadjoudjb21217885.github.io/flexarion/assets/img/favicon.svg" } }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://hanabadjoudjb21217885.github.io/flexarion/" },
+          { "@type": "ListItem", "position": 2, "name": "Devlog", "item": "https://hanabadjoudjb21217885.github.io/flexarion/devlog/" },
+          { "@type": "ListItem", "position": 3, "name": "Dessiner le vide", "item": "https://hanabadjoudjb21217885.github.io/flexarion/devlog/02-dessiner-le-vide.html" }
+        ]
+      }
+    ]
   }
   </script>
 </head>
 <body>
-  <header>
-    <div class="wrap">
-      <a class="logo" href="../" aria-label="Flexarion, accueil">
-        <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="5" fill="#5ee6ff"/><circle cx="17" cy="17" r="11" fill="none" stroke="#5ee6ff" stroke-opacity=".4"/><path d="M17 0v8M17 26v8" stroke="#ffb547" stroke-width="2"/></svg>
-        FLEXARION
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="../" aria-label="Flexarion, retour à l'accueil">
+        <svg class="brand__mark" viewBox="0 0 40 40" width="32" height="32" aria-hidden="true"><circle cx="20" cy="20" r="14" fill="none" stroke="currentColor" stroke-opacity=".45"/><circle class="brand__core" cx="20" cy="20" r="5" fill="#ff6a3d"/><path d="M20 0v10M20 30v10" stroke="currentColor" stroke-width="2"/></svg>
+        <span class="brand__name">Flexarion</span>
       </a>
-      <nav aria-label="Navigation principale">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+        <span class="nav-toggle__label">Menu</span>
+      </button>
+      <nav class="site-nav" id="menu" aria-label="Navigation principale">
         <ul>
-          <li><a href="../">Accueil</a></li>
-          <li><a href="../studio.html">Le studio</a></li>
-          <li><a href="../les-archives-de-vela.html">Le jeu</a></li>
-          <li><a href="./" aria-current="page">Devlog</a></li>
-          <li><a href="../contact.html">Contact / Presse</a></li>
+          <li><a href="../"><span class="site-nav__num" aria-hidden="true">01</span> Accueil</a></li>
+          <li><a href="../studio.html"><span class="site-nav__num" aria-hidden="true">02</span> Le studio</a></li>
+          <li><a href="../les-archives-de-vela.html"><span class="site-nav__num" aria-hidden="true">03</span> Le jeu</a></li>
+          <li><a href="./" aria-current="page"><span class="site-nav__num" aria-hidden="true">04</span> Devlog</a></li>
+          <li><a href="../contact.html"><span class="site-nav__num" aria-hidden="true">05</span> Contact &amp; presse</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main class="wrap">
+  <main id="contenu">
     <article>
-      <p class="meta"><a href="./">Devlog</a> · 17 novembre 2026 · par l'équipe Flexarion</p>
-      <h1>Devlog #2 : dessiner le vide</h1>
-      <p class="lead">Dans le <a href="01-ecouter-un-pulsar.html">devlog #1</a>, nous racontions comment le son est devenu le cœur des Archives de Vela. Cette fois, Léa, directrice artistique de Flexarion, explique comment on dessine un vaisseau où il n'y a plus personne.</p>
+      <header class="page-hero on-ink">
+        <div class="container container--narrow">
+          <nav class="breadcrumb" aria-label="Fil d'Ariane">
+            <ol>
+              <li><a href="../">Accueil</a></li>
+              <li><a href="./">Devlog</a></li>
+              <li aria-current="page">Devlog #2</li>
+            </ol>
+          </nav>
+          <p class="eyebrow">Devlog #2 · Direction artistique</p>
+          <h1>Dessiner le vide</h1>
+          <p class="article-meta"><span>Par <strong>Léa Moreau</strong>, direction artistique</span><time datetime="2026-11-17">17 novembre 2026</time><span>7 min de lecture</span></p>
+        </div>
+      </header>
 
-      <figure>
-        <img src="../img/ora-drone-couloir.svg" width="800" height="340" alt="Croquis de travail : ORA, le drone, dans un couloir vide du vaisseau-archive, entouré d'ondes sonores orange">
-        <figcaption>Croquis de travail : un couloir du <em>Mnémosyne</em> et ses ondes sonores.</figcaption>
-      </figure>
+      <div class="container container--narrow">
+        <figure class="plate article-cover">
+          <div class="plate__frame"><img src="../assets/img/coursive.svg" width="1600" height="900" alt="Croquis de travail : ORA, le drone, dans une coursive vide du vaisseau-archive, entouré d'ondes sonores orange"></div>
+          <figcaption><span class="plate__num">FIG. 1</span>Croquis de la coursive C-7, l'un des premiers lieux du jeu.</figcaption>
+        </figure>
 
-      <h2>Le problème : un lieu vide est vite ennuyeux</h2>
-      <p>Un vaisseau abandonné, ce sont des couloirs, des portes et des salles sans personne. Sur nos premiers essais, tout se ressemblait : on se perdait, et surtout on s'ennuyait. Il fallait que le vide raconte quelque chose.</p>
+        <div class="article prose">
+          <p>Dans le <a href="01-ecouter-un-pulsar.html">premier devlog</a>, Inès racontait comment le son est devenu le cœur des Archives de Vela. Ce mois-ci, je voulais parler de l'autre moitié du problème : comment on dessine un vaisseau dans lequel il n'y a plus personne, sans que le joueur s'y ennuie au bout de dix minutes.</p>
 
-      <h2>Trois règles pour l'ambiance</h2>
-      <h3>1. Deux couleurs, pas plus</h3>
-      <p>Le vaisseau est baigné d'un bleu cyan froid, celui du pulsar. Tout ce qui est lié à l'équipage, et donc à la mémoire, est en orange ambré. Le joueur apprend vite à suivre l'orange : c'est là qu'il y a une histoire à écouter.</p>
+          <h2>Le problème : un lieu vide est vite ennuyeux</h2>
+          <p>Un vaisseau abandonné, ce sont des couloirs, des portes, des salles techniques. Sur nos premières maquettes, tout se ressemblait : gris sur gris, des tuyaux partout, aucun point de repère. Les testeurs se perdaient, et surtout, ils ne ressentaient rien. Il fallait que le vide raconte quelque chose.</p>
 
-      <h3>2. Des traces plutôt que des personnages</h3>
-      <p>Une tasse posée sur une console, une couverture dans un couloir, des dessins d'enfant scotchés sur une porte. Aucun personnage n'apparaît à l'écran, mais chaque salle montre que quelqu'un a vécu là.</p>
+          <h2>Trois règles pour l'ambiance</h2>
 
-      <h3>3. Rendre le son visible</h3>
-      <p>Comme le jeu repose sur l'écoute, nous avons dessiné les sons : les échos apparaissent comme des cercles qui s'élargissent depuis leur source. Les joueurs sourds ou malentendants peuvent ainsi jouer sans le son, une contrainte d'accessibilité que nous tenions à respecter.</p>
+          <h3>1. Deux couleurs, pas plus</h3>
+          <p>Le vaisseau est baigné dans une lumière froide, presque blanche, celle du pulsar. Tout ce qui est lié à l'équipage — et donc à la mémoire — est en orange : les échos, les objets personnels, les dessins de Nell. Le joueur apprend très vite, sans tutoriel, à suivre l'orange. C'est là qu'il y a une histoire à écouter.</p>
+          <p>Cette règle nous a aussi beaucoup simplifié la vie : chaque fois que nous hésitons sur une couleur, la réponse est déjà écrite.</p>
 
-      <h2>Ce que nous avons abandonné</h2>
-      <p>Une première version utilisait des graphismes très réalistes. Le résultat était beau en capture d'écran, mais trop lourd pour notre petite équipe et trop froid pour le ton du jeu. Nous sommes passés à un style plus simple, aux formes géométriques et aux aplats de couleur : plus rapide à produire, et bien plus lisible.</p>
+          <h3>2. Des traces plutôt que des personnages</h3>
+          <p>Aucun membre de l'équipage n'apparaît à l'écran. À la place, chaque salle contient des traces de vie : une tasse sur une console, une couverture roulée dans un recoin, une porte couverte de dessins d'enfant. Ces objets racontent autant que les dialogues, et laissent au joueur le plaisir d'imaginer.</p>
 
-      <h2>Et ensuite ?</h2>
-      <p>Prochaine étape pour le studio Flexarion : le premier niveau jouable, la salle des machines du <em>Mnémosyne</em>. En attendant, retrouvez <a href="../les-archives-de-vela.html">la présentation complète des Archives de Vela</a>.</p>
+          <h3>3. Rendre le son visible</h3>
+          <p>Comme le jeu repose sur l'écoute, nous avons dessiné les sons. Chaque écho apparaît comme une série de cercles qui s'élargissent depuis sa source, plus ou moins nets selon la distance. C'était d'abord une aide pour les testeurs, c'est devenu un pilier de notre accessibilité : les joueurs sourds ou malentendants peuvent terminer le jeu sans le son.</p>
+
+          <figure class="plate">
+            <div class="plate__frame"><img src="../assets/img/nef.svg" width="1600" height="900" loading="lazy" alt="La Nef des archives, deux rangées de cylindres qui fuient vers l'horizon, certains marqués d'une lumière orange"></div>
+            <figcaption><span class="plate__num">FIG. 2</span>La Nef des archives : l'orange signale les cylindres qui contiennent encore une voix.</figcaption>
+          </figure>
+
+          <aside class="tech-note" aria-labelledby="note-2">
+            <p class="tech-note__title" id="note-2">Note technique — le shader du verre-lourd</p>
+            <p>Les coques de verre-lourd utilisent un seul shader : un effet de Fresnel qui éclaircit les bords, et des bandes horizontales animées dont la vitesse est calée sur la pulsation des machines. Quand un écho est proche, l'amplitude des bandes augmente. Un seul matériau pour tout le vaisseau, c'est aussi un seul point à optimiser : le jeu tient aujourd'hui sous les 400 appels de rendu par image sur nos scènes les plus chargées.</p>
+          </aside>
+
+          <h2>Ce que nous avons abandonné</h2>
+          <p>Notre première version visait le photoréalisme : textures détaillées, reflets, poussière en suspension. C'était impressionnant en capture d'écran, mais beaucoup trop lourd à produire pour une équipe de cinq personnes, et étrangement froid. Nous sommes passés à un style plus graphique, fait de formes simples, de traits fins et d'aplats. Le résultat est plus rapide à produire, beaucoup plus lisible, et ressemble enfin à une planche d'archive — ce que le <em>Mnémosyne</em> est, au fond.</p>
+          <blockquote class="pullquote"><p>Si une salle est belle mais muette, elle est à refaire.</p></blockquote>
+
+          <h2>Et ensuite&nbsp;?</h2>
+          <p>Prochaine étape pour le studio Flexarion : le premier niveau entièrement jouable, le Cœur, la salle des machines. Sofiane prépare de son côté un devlog sur la façon dont il transforme les fontaines d'Aix-en-Provence en échos de vaisseau. En attendant, retrouvez <a href="../les-archives-de-vela.html">les environnements du jeu</a> sur sa page de présentation.</p>
+
+          <nav class="article-nav" aria-label="Autres articles du devlog">
+            <a href="01-ecouter-un-pulsar.html"><span class="mono">← Article précédent</span>Écouter un pulsar</a>
+            <a class="article-nav__next" href="./"><span class="mono">Tous les devlogs →</span>Retour au journal</a>
+          </nav>
+        </div>
+      </div>
     </article>
   </main>
 
-  <footer>
-    <div class="wrap">
-      <p>© 2026 Flexarion, studio indépendant de jeux vidéo de science-fiction, Aix-en-Provence.</p>
-      <p><a href="../studio.html">Le studio</a> · <a href="../les-archives-de-vela.html">Les Archives de Vela</a> · <a href="./">Devlog</a> · <a href="../contact.html">Contact</a></p>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <p class="site-footer__brand">Flexarion</p>
+          <p>Studio indépendant de jeux vidéo de science-fiction.<br>Aix-en-Provence (13100), France.</p>
+        </div>
+        <nav aria-label="Plan du site">
+          <p class="site-footer__title">Plan du site</p>
+          <ul>
+            <li><a href="../">Accueil</a></li>
+            <li><a href="../studio.html">Le studio Flexarion</a></li>
+            <li><a href="../les-archives-de-vela.html">Les Archives de Vela</a></li>
+            <li><a href="./">Devlog</a></li>
+            <li><a href="../contact.html">Contact &amp; presse</a></li>
+          </ul>
+        </nav>
+        <div>
+          <p class="site-footer__title">En cours</p>
+          <p><a href="../les-archives-de-vela.html">Les Archives de Vela</a> — exploration sonore, PC. En développement.</p>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <p>© 2026 Flexarion · Projet étudiant, BUT Informatique — IUT d'Aix-Marseille.</p>
+        <p class="mono">PSR J0835−4510 · 89,3 ms</p>
+      </div>
     </div>
   </footer>
 </body>

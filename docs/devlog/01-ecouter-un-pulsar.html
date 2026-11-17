@@ -4,75 +4,185 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Devlog #1 : écouter un pulsar pour concevoir un jeu — Flexarion</title>
-  <meta name="description" content="Premier devlog du studio Flexarion : comment le son du pulsar de Vela est devenu la mécanique centrale des Archives de Vela, notre jeu de science-fiction.">
+  <meta name="description" content="Premier devlog du studio Flexarion : comment le battement du pulsar de Vela est devenu la mécanique centrale des Archives de Vela, en trois prototypes.">
   <link rel="canonical" href="https://hanabadjoudjb21217885.github.io/flexarion/devlog/01-ecouter-un-pulsar.html">
+  <meta name="theme-color" content="#0f1115">
+  <meta name="author" content="Inès Ferrand, Flexarion">
   <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Flexarion">
+  <meta property="og:locale" content="fr_FR">
   <meta property="og:title" content="Devlog #1 : écouter un pulsar pour concevoir un jeu">
+  <meta property="og:description" content="Trois prototypes, deux semaines, et un battement d'étoile morte devenu notre mécanique centrale.">
   <meta property="og:url" content="https://hanabadjoudjb21217885.github.io/flexarion/devlog/01-ecouter-un-pulsar.html">
-  <link rel="stylesheet" href="../style.css">
+  <meta property="og:image" content="https://hanabadjoudjb21217885.github.io/flexarion/assets/img/og-flexarion.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Logo Flexarion sur un graphique d'impulsions du pulsar de Vela">
+  <meta property="article:published_time" content="2026-11-17">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Devlog #1 : écouter un pulsar pour concevoir un jeu">
+  <meta name="twitter:description" content="Trois prototypes, deux semaines, et un battement d'étoile morte.">
+  <meta name="twitter:image" content="https://hanabadjoudjb21217885.github.io/flexarion/assets/img/og-flexarion.png">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script>document.documentElement.classList.add("js")</script>
+  <script src="../assets/js/main.js" defer></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": "Devlog #1 : écouter un pulsar pour concevoir un jeu",
-    "datePublished": "2026-11-17",
-    "inLanguage": "fr",
-    "author": { "@type": "Organization", "name": "Flexarion" },
-    "publisher": { "@type": "Organization", "name": "Flexarion" }
+    "@graph": [
+      {
+        "@type": "BlogPosting",
+        "headline": "Devlog #1 : écouter un pulsar pour concevoir un jeu",
+        "description": "Comment le battement du pulsar de Vela est devenu la mécanique centrale des Archives de Vela.",
+        "datePublished": "2026-11-17",
+        "dateModified": "2026-11-17",
+        "inLanguage": "fr-FR",
+        "image": "https://hanabadjoudjb21217885.github.io/flexarion/assets/img/pulse-plot.svg",
+        "mainEntityOfPage": "https://hanabadjoudjb21217885.github.io/flexarion/devlog/01-ecouter-un-pulsar.html",
+        "author": { "@type": "Person", "name": "Inès Ferrand", "jobTitle": "Directrice créative", "worksFor": { "@type": "Organization", "name": "Flexarion" } },
+        "publisher": { "@type": "Organization", "name": "Flexarion", "logo": { "@type": "ImageObject", "url": "https://hanabadjoudjb21217885.github.io/flexarion/assets/img/favicon.svg" } }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://hanabadjoudjb21217885.github.io/flexarion/" },
+          { "@type": "ListItem", "position": 2, "name": "Devlog", "item": "https://hanabadjoudjb21217885.github.io/flexarion/devlog/" },
+          { "@type": "ListItem", "position": 3, "name": "Écouter un pulsar", "item": "https://hanabadjoudjb21217885.github.io/flexarion/devlog/01-ecouter-un-pulsar.html" }
+        ]
+      }
+    ]
   }
   </script>
 </head>
 <body>
-  <header>
-    <div class="wrap">
-      <a class="logo" href="../" aria-label="Flexarion, accueil">
-        <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="5" fill="#5ee6ff"/><circle cx="17" cy="17" r="11" fill="none" stroke="#5ee6ff" stroke-opacity=".4"/><path d="M17 0v8M17 26v8" stroke="#ffb547" stroke-width="2"/></svg>
-        FLEXARION
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="../" aria-label="Flexarion, retour à l'accueil">
+        <svg class="brand__mark" viewBox="0 0 40 40" width="32" height="32" aria-hidden="true"><circle cx="20" cy="20" r="14" fill="none" stroke="currentColor" stroke-opacity=".45"/><circle class="brand__core" cx="20" cy="20" r="5" fill="#ff6a3d"/><path d="M20 0v10M20 30v10" stroke="currentColor" stroke-width="2"/></svg>
+        <span class="brand__name">Flexarion</span>
       </a>
-      <nav aria-label="Navigation principale">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+        <span class="nav-toggle__label">Menu</span>
+      </button>
+      <nav class="site-nav" id="menu" aria-label="Navigation principale">
         <ul>
-          <li><a href="../">Accueil</a></li>
-          <li><a href="../studio.html">Le studio</a></li>
-          <li><a href="../les-archives-de-vela.html">Le jeu</a></li>
-          <li><a href="./" aria-current="page">Devlog</a></li>
-          <li><a href="../contact.html">Contact / Presse</a></li>
+          <li><a href="../"><span class="site-nav__num" aria-hidden="true">01</span> Accueil</a></li>
+          <li><a href="../studio.html"><span class="site-nav__num" aria-hidden="true">02</span> Le studio</a></li>
+          <li><a href="../les-archives-de-vela.html"><span class="site-nav__num" aria-hidden="true">03</span> Le jeu</a></li>
+          <li><a href="./" aria-current="page"><span class="site-nav__num" aria-hidden="true">04</span> Devlog</a></li>
+          <li><a href="../contact.html"><span class="site-nav__num" aria-hidden="true">05</span> Contact &amp; presse</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main class="wrap">
+  <main id="contenu">
     <article>
-      <p class="meta"><a href="./">Devlog</a> · 17 novembre 2026 · par l'équipe Flexarion</p>
-      <h1>Devlog #1 : écouter un pulsar pour concevoir un jeu</h1>
-      <p class="lead">Bienvenue dans le premier devlog du studio Flexarion ! Avant de parler de code ou de graphismes, nous voulions vous raconter d'où vient l'idée des Archives de Vela. Spoiler : d'un son.</p>
+      <header class="page-hero on-ink">
+        <div class="container container--narrow">
+          <nav class="breadcrumb" aria-label="Fil d'Ariane">
+            <ol>
+              <li><a href="../">Accueil</a></li>
+              <li><a href="./">Devlog</a></li>
+              <li aria-current="page">Devlog #1</li>
+            </ol>
+          </nav>
+          <p class="eyebrow">Devlog #1 · Game design</p>
+          <h1>Écouter un pulsar pour concevoir un jeu</h1>
+          <p class="article-meta"><span>Par <strong>Inès Ferrand</strong>, direction créative</span><time datetime="2026-11-17">17 novembre 2026</time><span>6 min de lecture</span></p>
+        </div>
+      </header>
 
-      <h2>Un battement venu de l'espace</h2>
-      <p>Un pulsar est ce qui reste d'une étoile massive après son explosion : un astre minuscule et ultra-dense qui tourne sur lui-même en émettant deux faisceaux d'ondes radio, comme un phare. Chaque fois qu'un faisceau balaie la Terre, les radiotélescopes captent une impulsion. Convertie en son, cette série d'impulsions devient un battement d'une régularité presque parfaite.</p>
-      <p>Celui du pulsar de Vela bat environ 11 fois par seconde. Quand nous l'avons entendu pour la première fois, lors d'une conférence à Aix-en-Provence, il nous a fait penser à un cœur mécanique. C'est ce son qui a donné naissance au studio Flexarion, et à notre premier jeu.</p>
+      <div class="container container--narrow">
+        <figure class="plate article-cover">
+          <div class="plate__frame"><img src="../assets/img/pulse-plot.svg" width="1600" height="900" alt="Impulsions radio successives du pulsar de Vela empilées les unes sous les autres, une ligne surlignée en orange"></div>
+          <figcaption><span class="plate__num">FIG. 1</span>Les impulsions successives du pulsar de Vela : chaque ligne est un battement.</figcaption>
+        </figure>
 
-      <h2>Du son à la mécanique de jeu</h2>
-      <p>Notre première question a été : comment faire d'un rythme une mécanique, sans transformer le jeu en jeu de rythme ? Nous avons fait trois prototypes en deux semaines :</p>
-      <ol>
-        <li><strong>Le métronome :</strong> le joueur devait appuyer en rythme. Efficace, mais stressant et trop « arcade » pour l'ambiance que nous voulions.</li>
-        <li><strong>Le radar sonore :</strong> le battement révélait les murs autour du joueur, comme un sonar. Joli, mais le son devenait vite fatigant.</li>
-        <li><strong>Les portes synchronisées :</strong> certaines portes du vaisseau s'ouvrent et se ferment au rythme du pulsar. Le joueur observe, écoute, puis choisit son moment. C'est cette version que nous avons gardée.</li>
-      </ol>
-      <p>La différence est subtile mais essentielle : dans la version finale, le joueur n'est jamais pressé. Le pulsar ne punit pas, il indique. On peut attendre aussi longtemps qu'on veut avant de passer.</p>
+        <div class="article prose">
+          <p>Bienvenue dans le premier devlog du studio Flexarion. Avant de parler graphismes ou code, il fallait raconter d'où viennent Les Archives de Vela. La réponse tient en un mot : un son. Celui d'une étoile morte qui bat, inlassablement, à mille années-lumière d'Aix-en-Provence.</p>
 
-      <h2>Les échos de l'équipage</h2>
-      <p>La deuxième idée est venue naturellement : si le vaisseau baigne depuis trois siècles dans les vibrations du pulsar, peut-être que ses coques ont « enregistré » d'autres sons. Les voix de l'équipage, des pas, des portes qui claquent. ORA, le petit drone que l'on incarne, peut capter ces échos et les rejouer. C'est ainsi que l'on reconstitue, morceau par morceau, l'histoire du <em>Mnémosyne</em>.</p>
-      <blockquote>Chez Flexarion, nous voulons que le joueur ait envie de fermer les yeux pour mieux jouer.</blockquote>
+          <h2>Un battement venu de l'espace</h2>
+          <p>Un pulsar, c'est ce qui reste d'une étoile massive après son explosion : un astre d'une vingtaine de kilomètres de diamètre, plus dense que tout ce que l'on connaît, qui tourne sur lui-même en émettant deux faisceaux d'ondes radio. Comme un phare, chaque fois qu'un faisceau balaie la Terre, les radiotélescopes enregistrent une impulsion.</p>
+          <p>Le pulsar de Vela fait un tour complet en environ 89 millisecondes — un peu plus de onze battements par seconde. Converti en son, son signal ressemble à un moteur lointain, ou à un cœur mécanique. C'est ce son que nous avons entendu en juin 2023, et c'est lui qui a donné naissance au studio.</p>
 
-      <h2>Et maintenant ?</h2>
-      <p>Le <a href="02-dessiner-le-vide.html">devlog #2</a> parle de la direction artistique du vaisseau-archive : comment représenter un lieu vide sans qu'il paraisse ennuyeux. En attendant, découvrez <a href="../les-archives-de-vela.html">la page du jeu</a> ou <a href="../studio.html">l'équipe du studio</a>.</p>
+          <h2>Trois prototypes en deux semaines</h2>
+          <p>Notre première question était simple à poser et difficile à résoudre : comment faire d'un rythme une mécanique de jeu, sans transformer le jeu en jeu de rythme&nbsp;? Nous nous sommes donné deux semaines et trois prototypes.</p>
+
+          <h3>Prototype A — le métronome</h3>
+          <p>Le joueur devait appuyer sur une touche en rythme avec le pulsar pour avancer. Techniquement, c'était le plus simple. Mais en test, tout le monde se crispait : on regardait la barre de rythme au lieu du décor. Le jeu devenait stressant, exactement l'inverse de ce que nous voulions.</p>
+
+          <h3>Prototype B — le sonar</h3>
+          <p>Chaque battement révélait brièvement les murs autour du joueur, comme un sonar. Visuellement, c'était superbe. Mais au bout de dix minutes, le battement permanent devenait fatigant, et les testeurs coupaient le son… dans un jeu qui reposait sur le son.</p>
+
+          <h3>Prototype C — les portes synchronisées</h3>
+          <p>Certaines portes du vaisseau s'ouvrent et se ferment au rythme du pulsar. Le joueur observe, écoute, puis choisit son moment pour passer. C'est la version que nous avons gardée, pour une raison essentielle : <strong>le pulsar ne punit pas, il indique</strong>. On peut attendre aussi longtemps qu'on veut avant de traverser.</p>
+
+          <aside class="tech-note" aria-labelledby="note-1">
+            <p class="tech-note__title" id="note-1">Note technique — Malik Haddad</p>
+            <p>Sous Godot 4, nous ne synchronisons pas les portes sur l'horloge d'affichage mais sur l'horloge audio, en combinant <code>AudioServer.get_time_since_last_mix()</code> et <code>AudioServer.get_output_latency()</code>. Sans cette correction, les portes se décalaient de 30 à 60 ms selon les machines : assez pour que le joueur sente que « quelque chose cloche » sans savoir quoi. Le jeu accepte aussi une fenêtre de tolérance de 120 ms autour de chaque ouverture.</p>
+          </aside>
+
+          <h2>Ralentir le pulsar, sans mentir</h2>
+          <p>Onze battements par seconde, c'est trop rapide pour être suivi à l'oreille comme un rythme : on l'entend comme un bourdonnement. Plutôt que de tricher sur la science, nous avons trouvé une justification dans l'univers du jeu. Les machines du <em>Mnémosyne</em> ne réagissent pas à chaque impulsion, mais à des cycles de plusieurs impulsions, calculés par CHORALE pour économiser l'énergie. Le joueur entend donc à la fois le vrai bourdonnement du pulsar et, par-dessus, la pulsation plus lente des machines.</p>
+          <blockquote class="pullquote"><p>Chez Flexarion, nous voulons que le joueur ait envie de fermer les yeux pour mieux jouer.</p></blockquote>
+
+          <h2>Des portes aux souvenirs</h2>
+          <p>La deuxième idée est venue naturellement. Si le vaisseau baigne depuis des siècles dans les vibrations du pulsar, peut-être que ses coques ont « enregistré » d'autres sons : les voix de l'équipage, des pas, des disputes. C'est ainsi qu'est né le verre-lourd, et avec lui la mécanique d'écoute qui structure tout le jeu. ORA ne se contente plus de passer des portes : elle collectionne des souvenirs.</p>
+
+          <h2>Ce que nous avons appris</h2>
+          <ul>
+            <li>Une contrainte réelle (la vitesse du pulsar) produit de meilleures idées qu'une liberté totale.</li>
+            <li>Tester tôt avec des inconnus évite des mois de travail sur une mauvaise piste : le prototype A aurait pu nous coûter tout l'hiver.</li>
+            <li>Une mécanique sonore doit toujours avoir un équivalent visuel, pour l'accessibilité comme pour le confort.</li>
+          </ul>
+
+          <h2>Et ensuite&nbsp;?</h2>
+          <p>Dans le prochain devlog, Léa raconte comment nous avons dessiné un vaisseau vide sans qu'il paraisse ennuyeux. En attendant, découvrez <a href="../les-archives-de-vela.html">la présentation complète des Archives de Vela</a> ou <a href="../studio.html">l'équipe du studio Flexarion</a>.</p>
+
+          <nav class="article-nav" aria-label="Autres articles du devlog">
+            <a href="./"><span class="mono">← Tous les devlogs</span>Retour au journal</a>
+            <a class="article-nav__next" href="02-dessiner-le-vide.html"><span class="mono">Article suivant →</span>Dessiner le vide</a>
+          </nav>
+        </div>
+      </div>
     </article>
   </main>
 
-  <footer>
-    <div class="wrap">
-      <p>© 2026 Flexarion, studio indépendant de jeux vidéo de science-fiction, Aix-en-Provence.</p>
-      <p><a href="../studio.html">Le studio</a> · <a href="../les-archives-de-vela.html">Les Archives de Vela</a> · <a href="./">Devlog</a> · <a href="../contact.html">Contact</a></p>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <p class="site-footer__brand">Flexarion</p>
+          <p>Studio indépendant de jeux vidéo de science-fiction.<br>Aix-en-Provence (13100), France.</p>
+        </div>
+        <nav aria-label="Plan du site">
+          <p class="site-footer__title">Plan du site</p>
+          <ul>
+            <li><a href="../">Accueil</a></li>
+            <li><a href="../studio.html">Le studio Flexarion</a></li>
+            <li><a href="../les-archives-de-vela.html">Les Archives de Vela</a></li>
+            <li><a href="./">Devlog</a></li>
+            <li><a href="../contact.html">Contact &amp; presse</a></li>
+          </ul>
+        </nav>
+        <div>
+          <p class="site-footer__title">En cours</p>
+          <p><a href="../les-archives-de-vela.html">Les Archives de Vela</a> — exploration sonore, PC. En développement.</p>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <p>© 2026 Flexarion · Projet étudiant, BUT Informatique — IUT d'Aix-Marseille.</p>
+        <p class="mono">PSR J0835−4510 · 89,3 ms</p>
+      </div>
     </div>
   </footer>
 </body>

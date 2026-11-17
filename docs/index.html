@@ -4,99 +4,273 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Flexarion — Studio de jeux vidéo de science-fiction à Aix-en-Provence</title>
-  <meta name="description" content="Flexarion est un studio indépendant de jeux vidéo de science-fiction basé à Aix-en-Provence. Découvrez Les Archives de Vela, notre premier jeu d'exploration contemplative.">
+  <meta name="description" content="Flexarion, studio indépendant de jeux vidéo de science-fiction à Aix-en-Provence. Découvrez Les Archives de Vela, un jeu d'exploration où l'on écoute l'univers.">
   <link rel="canonical" href="https://hanabadjoudjb21217885.github.io/flexarion/">
+  <meta name="theme-color" content="#0f1115">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Flexarion — Studio de jeux vidéo SF à Aix-en-Provence">
-  <meta property="og:description" content="Studio indépendant de jeux vidéo de science-fiction. Premier jeu : Les Archives de Vela.">
-  <meta property="og:url" content="https://hanabadjoudjb21217885.github.io/flexarion/">
+  <meta property="og:site_name" content="Flexarion">
   <meta property="og:locale" content="fr_FR">
-  <link rel="stylesheet" href="style.css">
+  <meta property="og:title" content="Flexarion — Studio de jeux vidéo de science-fiction à Aix-en-Provence">
+  <meta property="og:description" content="Studio indépendant aixois. Nous écoutons ce que l'univers a oublié. Premier jeu : Les Archives de Vela.">
+  <meta property="og:url" content="https://hanabadjoudjb21217885.github.io/flexarion/">
+  <meta property="og:image" content="https://hanabadjoudjb21217885.github.io/flexarion/assets/img/og-flexarion.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Logo Flexarion sur un graphique d'impulsions du pulsar de Vela">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Flexarion — Studio de jeux vidéo de science-fiction">
+  <meta name="twitter:description" content="Studio indépendant aixois. Premier jeu : Les Archives de Vela.">
+  <meta name="twitter:image" content="https://hanabadjoudjb21217885.github.io/flexarion/assets/img/og-flexarion.png">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.add("js")</script>
+  <script src="assets/js/main.js" defer></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Flexarion",
-    "alternateName": "Flexarion Studio",
-    "url": "https://hanabadjoudjb21217885.github.io/flexarion/",
-    "description": "Studio indépendant de développement de jeux vidéo de science-fiction basé à Aix-en-Provence.",
-    "foundingDate": "2023",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Aix-en-Provence",
-      "postalCode": "13100",
-      "addressCountry": "FR"
-    }
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://hanabadjoudjb21217885.github.io/flexarion/#studio",
+        "name": "Flexarion",
+        "alternateName": "Studio Flexarion",
+        "url": "https://hanabadjoudjb21217885.github.io/flexarion/",
+        "logo": "https://hanabadjoudjb21217885.github.io/flexarion/assets/img/favicon.svg",
+        "description": "Studio indépendant de développement de jeux vidéo de science-fiction basé à Aix-en-Provence.",
+        "foundingDate": "2023",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Aix-en-Provence",
+          "postalCode": "13100",
+          "addressRegion": "Provence-Alpes-Côte d'Azur",
+          "addressCountry": "FR"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://hanabadjoudjb21217885.github.io/flexarion/#site",
+        "name": "Flexarion",
+        "url": "https://hanabadjoudjb21217885.github.io/flexarion/",
+        "inLanguage": "fr-FR",
+        "publisher": { "@id": "https://hanabadjoudjb21217885.github.io/flexarion/#studio" }
+      }
+    ]
   }
   </script>
 </head>
 <body>
-  <header>
-    <div class="wrap">
-      <a class="logo" href="./" aria-label="Flexarion, accueil">
-        <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="5" fill="#5ee6ff"/><circle cx="17" cy="17" r="11" fill="none" stroke="#5ee6ff" stroke-opacity=".4"/><path d="M17 0v8M17 26v8" stroke="#ffb547" stroke-width="2"/></svg>
-        FLEXARION
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="./" aria-label="Flexarion, retour à l'accueil">
+        <svg class="brand__mark" viewBox="0 0 40 40" width="32" height="32" aria-hidden="true"><circle cx="20" cy="20" r="14" fill="none" stroke="currentColor" stroke-opacity=".45"/><circle class="brand__core" cx="20" cy="20" r="5" fill="#ff6a3d"/><path d="M20 0v10M20 30v10" stroke="currentColor" stroke-width="2"/></svg>
+        <span class="brand__name">Flexarion</span>
       </a>
-      <nav aria-label="Navigation principale">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+        <span class="nav-toggle__label">Menu</span>
+      </button>
+      <nav class="site-nav" id="menu" aria-label="Navigation principale">
         <ul>
-          <li><a href="./" aria-current="page">Accueil</a></li>
-          <li><a href="studio.html">Le studio</a></li>
-          <li><a href="les-archives-de-vela.html">Le jeu</a></li>
-          <li><a href="devlog/">Devlog</a></li>
-          <li><a href="contact.html">Contact / Presse</a></li>
+          <li><a href="./" aria-current="page"><span class="site-nav__num" aria-hidden="true">01</span> Accueil</a></li>
+          <li><a href="studio.html"><span class="site-nav__num" aria-hidden="true">02</span> Le studio</a></li>
+          <li><a href="les-archives-de-vela.html"><span class="site-nav__num" aria-hidden="true">03</span> Le jeu</a></li>
+          <li><a href="devlog/"><span class="site-nav__num" aria-hidden="true">04</span> Devlog</a></li>
+          <li><a href="contact.html"><span class="site-nav__num" aria-hidden="true">05</span> Contact &amp; presse</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main class="wrap">
-    <section class="hero">
-      <svg width="220" height="220" viewBox="0 0 220 220" role="img" aria-label="Logo de Flexarion : un pulsar et ses deux faisceaux">
-        <defs><radialGradient id="g"><stop offset="0" stop-color="#5ee6ff"/><stop offset="1" stop-color="#5ee6ff" stop-opacity="0"/></radialGradient></defs>
-        <circle cx="110" cy="110" r="70" fill="url(#g)" opacity=".35"/>
-        <circle class="pulse" cx="110" cy="110" r="22" fill="#5ee6ff"/>
-        <circle cx="110" cy="110" r="50" fill="none" stroke="#5ee6ff" stroke-opacity=".4"/>
-        <circle cx="110" cy="110" r="78" fill="none" stroke="#5ee6ff" stroke-opacity=".15"/>
-        <path d="M110 0v70M110 150v70" stroke="#ffb547" stroke-width="4"/>
-      </svg>
-      <h1>Flexarion, studio de jeux vidéo de science-fiction</h1>
-      <p class="lead">Nous sommes Flexarion, un petit studio indépendant installé à Aix-en-Provence. Nous créons des jeux de science-fiction lents, sonores et contemplatifs, où l'on écoute l'univers autant qu'on l'explore.</p>
-      <a class="btn" href="les-archives-de-vela.html">Découvrir Les Archives de Vela</a>
-      <a class="btn" href="devlog/">Lire le devlog</a>
+  <main id="contenu">
+    <section class="hero on-ink" aria-labelledby="hero-title">
+      <canvas class="hero__canvas" data-pulsar aria-hidden="true"></canvas>
+      <div class="container hero__content">
+        <p class="eyebrow">PSR J0835−4510 · signal reçu</p>
+        <h1 class="hero__title" id="hero-title">
+          <span class="hero__word">Flexarion</span>
+          <span class="hero__subtitle">Studio indépendant de jeux vidéo de science-fiction — Aix-en-Provence</span>
+        </h1>
+        <p class="hero__tagline">Nous écoutons ce que l'univers a oublié.</p>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="les-archives-de-vela.html">Découvrir Les Archives de Vela <span class="btn__arrow" aria-hidden="true">→</span></a>
+          <a class="btn" href="devlog/">Lire le devlog <span class="btn__arrow" aria-hidden="true">→</span></a>
+        </div>
+        <dl class="hero__meta">
+          <div><dt>Fondé en</dt><dd>2023</dd></div>
+          <div><dt>Basé à</dt><dd>Aix-en-Provence</dd></div>
+          <div><dt>En développement</dt><dd>Les Archives de Vela</dd></div>
+        </dl>
+      </div>
+      <a class="scroll-cue" href="#manifeste">Défiler</a>
     </section>
 
-    <h2>Notre positionnement</h2>
-    <p>Le studio Flexarion est né d'une conviction simple : la science-fiction ne se résume pas aux batailles spatiales. Nos jeux parlent de mémoire, de solitude et de ce qui reste d'une civilisation quand plus personne n'est là pour la raconter. Pas de score, pas de chronomètre : juste un monde à comprendre.</p>
-
-    <div class="cards">
-      <div class="card">
-        <h3>Une SF contemplative</h3>
-        <p>Des univers silencieux et cohérents, inspirés de la vraie astrophysique, pensés pour être explorés à son rythme.</p>
+    <section class="section" id="manifeste" aria-labelledby="manifeste-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">§ 01 — Le studio</p>
+          <h2 id="manifeste-title" class="visually-hidden">Le studio Flexarion</h2>
+          <p class="statement">Flexarion est un studio de cinq personnes installé à Aix-en-Provence. Nous faisons des jeux de science-fiction qu'on <em>écoute</em> autant qu'on les regarde.</p>
+        </div>
+        <div class="split">
+          <div class="prose reveal">
+            <p>Tout a commencé par un son : le battement du pulsar de Vela, une étoile morte qui tourne sur elle-même onze fois par seconde. En l'entendant pour la première fois, nous avons compris le genre de jeux que nous voulions faire : des jeux de science-fiction lents, précis, où le silence a autant de valeur que l'action.</p>
+            <p>Le studio Flexarion travaille à taille humaine, en public, et prend la science au sérieux. Pas de batailles spatiales, pas d'empire galactique : des lieux abandonnés, des mémoires à reconstituer, et des joueurs qui prennent le temps de comprendre.</p>
+            <a class="btn" href="studio.html">Rencontrer l'équipe <span class="btn__arrow" aria-hidden="true">→</span></a>
+          </div>
+          <figure class="plate reveal" style="--delay: .15s">
+            <div class="plate__frame"><img src="assets/img/pulse-plot.svg" width="1600" height="900" loading="lazy" alt="Graphique noir et blanc d'impulsions radio empilées du pulsar de Vela, une ligne surlignée en orange"></div>
+            <figcaption><span class="plate__num">PL. 01</span> Les impulsions successives du pulsar de Vela, notre point de départ.</figcaption>
+          </figure>
+        </div>
       </div>
-      <div class="card">
-        <h3>Le son au cœur du jeu</h3>
-        <p>Chez Flexarion, l'audio n'est pas un décor : c'est une mécanique. On résout les énigmes en écoutant.</p>
-      </div>
-      <div class="card">
-        <h3>Un studio aixois</h3>
-        <p>Quatre développeurs, un atelier à Aix-en-Provence et une communauté qui suit chaque étape du projet.</p>
-      </div>
-    </div>
+    </section>
 
-    <h2>Notre premier jeu : Les Archives de Vela</h2>
-    <p>À bord d'un vaisseau-archive abandonné en orbite autour du pulsar de Vela, vous incarnez un petit drone de maintenance réveillé après trois siècles de veille. Votre mission : reconstituer la mémoire de l'équipage à partir des sons que le vaisseau a enregistrés. <a href="les-archives-de-vela.html">Tout savoir sur le jeu</a>.</p>
+    <section class="section on-ink" aria-labelledby="jeu-title">
+      <div class="container">
+        <p class="eyebrow reveal">§ 02 — Notre jeu phare</p>
+        <h2 class="feature-game__title reveal" id="jeu-title">Les Archives de Vela</h2>
+        <p class="feature-game__slogan reveal">Trois siècles de silence. Un seul battement.</p>
+        <figure class="plate plate--bleed reveal">
+          <div class="plate__frame"><img src="assets/img/mnemosyne-vela.svg" width="1600" height="900" loading="lazy" data-parallax="-0.04" alt="Le vaisseau-archive Mnémosyne, long et nervuré, en orbite autour du pulsar de Vela dont les deux faisceaux traversent le ciel"></div>
+          <figcaption><span class="plate__num">PL. 02</span> Le <em>Mnémosyne</em> en orbite autour du pulsar de Vela — illustration de travail.</figcaption>
+        </figure>
+        <div class="feature-game__body">
+          <p class="lede reveal">Vous êtes ORA, un drone de maintenance réveillé à bord d'un vaisseau-archive que tout le monde a oublié.</p>
+          <div class="reveal" style="--delay: .1s">
+            <p>L'équipage du <em>Mnémosyne</em> a disparu il y a trois cents ans. Les bases de données sont corrompues, mais les coques du vaisseau ont tout retenu : chaque voix, chaque pas, chaque dispute y vibre encore. Écoutez ces échos, remettez-les dans l'ordre, et découvrez pourquoi personne n'est jamais rentré.</p>
+            <a class="btn btn--primary" href="les-archives-de-vela.html">Explorer le jeu <span class="btn__arrow" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <h2>Derniers devlogs</h2>
-    <ul>
-      <li><a href="devlog/02-dessiner-le-vide.html">Devlog #2 : dessiner le vide, la direction artistique du vaisseau-archive</a></li>
-      <li><a href="devlog/01-ecouter-un-pulsar.html">Devlog #1 : écouter un pulsar pour concevoir un jeu</a></li>
-    </ul>
+    <section class="section" aria-labelledby="univers-title">
+      <div class="container">
+        <div class="split split--reverse">
+          <div class="reveal">
+            <p class="eyebrow">§ 03 — L'univers</p>
+            <h2 id="univers-title">Un vaisseau qui se souvient</h2>
+            <div class="prose">
+              <p>Au XXIV<sup>e</sup> siècle, l'humanité a confié sa mémoire à des vaisseaux-archives. Leurs coques sont faites de <strong>verre-lourd</strong>, un matériau qui, baigné dans le rayonnement d'un pulsar, conserve la trace de toutes les vibrations qui le traversent.</p>
+              <p>Le <em>Mnémosyne</em> a enregistré trois siècles de vie à son bord. CHORALE, l'intelligence du vaisseau, s'est tue. Il ne reste que ces fragments.</p>
+            </div>
+            <div class="transcripts">
+              <blockquote class="transcript">
+                <p>« Si quelqu'un entend ceci, ne rallume pas les moteurs. Pas encore. »</p>
+                <cite>Fragment 0412 · Pont d'écoute · voix non identifiée</cite>
+              </blockquote>
+              <blockquote class="transcript">
+                <p>« Nell a encore dessiné le pulsar sur la porte des jardins. Je n'ai pas eu le cœur de l'effacer. »</p>
+                <cite>Fragment 1187 · Coursive C-7 · T. Reyes, archiviste</cite>
+              </blockquote>
+            </div>
+          </div>
+          <figure class="plate reveal" style="--delay: .15s">
+            <div class="plate__frame"><img src="assets/img/ora.svg" width="1000" height="1000" loading="lazy" alt="Portrait d'ORA : un petit drone rond à l'objectif orange, entouré d'ondes sonores concentriques"></div>
+            <figcaption><span class="plate__num">PL. 03</span> ORA, unité de maintenance 7 — le personnage incarné par le joueur.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section on-ink" aria-labelledby="philosophie-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">§ 04 — Philosophie</p>
+          <h2 id="philosophie-title">Ce qui guide chaque jeu Flexarion</h2>
+        </div>
+        <ol class="principles">
+          <li class="reveal">
+            <h3>Le silence est un matériau</h3>
+            <p>Nous dessinons les sons avant les décors. Un couloir vide n'est pas vide s'il a quelque chose à vous faire entendre.</p>
+          </li>
+          <li class="reveal">
+            <h3>La science d'abord, la fiction ensuite</h3>
+            <p>Nos univers partent de phénomènes réels — pulsars, ondes radio, mécanique orbitale — avant de s'autoriser à rêver.</p>
+          </li>
+          <li class="reveal">
+            <h3>Personne ne perd en jouant lentement</h3>
+            <p>Pas de chronomètre, pas de mort punitive. Le joueur avance à son rythme, et c'est le monde qui l'attend.</p>
+          </li>
+          <li class="reveal">
+            <h3>Construire en public</h3>
+            <p>Chaque étape, réussie ou ratée, est racontée dans notre devlog. Les joueurs voient le jeu se faire.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="devlog-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">§ 05 — Journal de développement</p>
+          <h2 id="devlog-title">Derniers devlogs</h2>
+        </div>
+        <ul class="log-list">
+          <li class="log-entry reveal">
+            <a class="log-entry__cover" href="devlog/02-dessiner-le-vide.html" tabindex="-1" aria-hidden="true"><img src="assets/img/coursive.svg" width="1600" height="900" loading="lazy" alt=""></a>
+            <div>
+              <p class="log-entry__meta"><strong>Devlog #2</strong><span>Direction artistique</span><time datetime="2026-11-17">17 novembre 2026</time></p>
+              <h3><a href="devlog/02-dessiner-le-vide.html">Dessiner le vide</a></h3>
+              <p>Comment rendre un vaisseau désert beau, lisible et chargé d'histoire avec seulement deux couleurs.</p>
+            </div>
+          </li>
+          <li class="log-entry reveal">
+            <a class="log-entry__cover" href="devlog/01-ecouter-un-pulsar.html" tabindex="-1" aria-hidden="true"><img src="assets/img/pulse-plot.svg" width="1600" height="900" loading="lazy" alt=""></a>
+            <div>
+              <p class="log-entry__meta"><strong>Devlog #1</strong><span>Game design</span><time datetime="2026-11-17">17 novembre 2026</time></p>
+              <h3><a href="devlog/01-ecouter-un-pulsar.html">Écouter un pulsar pour concevoir un jeu</a></h3>
+              <p>Trois prototypes, deux semaines, et un battement d'étoile morte devenu notre mécanique centrale.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section on-ink cta-band" aria-labelledby="cta-title">
+      <div class="container reveal">
+        <p class="eyebrow">§ 06 — Restons en contact</p>
+        <h2 id="cta-title" class="statement">Le <em>Mnémosyne</em> se construit en public. Venez écouter.</h2>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="devlog/">Suivre le devlog <span class="btn__arrow" aria-hidden="true">→</span></a>
+          <a class="btn" href="contact.html">Écrire au studio <span class="btn__arrow" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    <div class="wrap">
-      <p>© 2026 Flexarion, studio indépendant de jeux vidéo de science-fiction, Aix-en-Provence.</p>
-      <p><a href="studio.html">Le studio</a> · <a href="les-archives-de-vela.html">Les Archives de Vela</a> · <a href="devlog/">Devlog</a> · <a href="contact.html">Contact</a></p>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <p class="site-footer__brand">Flexarion</p>
+          <p>Studio indépendant de jeux vidéo de science-fiction.<br>Aix-en-Provence (13100), France.</p>
+        </div>
+        <nav aria-label="Plan du site">
+          <p class="site-footer__title">Plan du site</p>
+          <ul>
+            <li><a href="./">Accueil</a></li>
+            <li><a href="studio.html">Le studio Flexarion</a></li>
+            <li><a href="les-archives-de-vela.html">Les Archives de Vela</a></li>
+            <li><a href="devlog/">Devlog</a></li>
+            <li><a href="contact.html">Contact &amp; presse</a></li>
+          </ul>
+        </nav>
+        <div>
+          <p class="site-footer__title">En cours</p>
+          <p><a href="les-archives-de-vela.html">Les Archives de Vela</a> — exploration sonore, PC. En développement.</p>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <p>© 2026 Flexarion · Projet étudiant, BUT Informatique — IUT d'Aix-Marseille.</p>
+        <p class="mono">PSR J0835−4510 · 89,3 ms</p>
+      </div>
     </div>
   </footer>
 </body>
